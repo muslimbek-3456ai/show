@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Uyga vazifa</title>
+</head>
+<body>
+
+    <!-- Поле ввода для пароля -->
+    <input type="password" id="myInput" placeholder="Parolni kiriting">
+    
+    <!-- Кнопка для переключения -->
+    <button onclick="togglePassword()">Show / Hide</button>
+
+    <script>
+        function togglePassword() {
+            var input = document.getElementById("myInput");
+            
+            // Если тип password, меняем на text, иначе возвращаем password
+            if (input.type === "password") {
+                input.type = "text";
+            } else {
+                input.type = "password";
+            }
+        }
+    </script>
+
+</body>
+</html>
